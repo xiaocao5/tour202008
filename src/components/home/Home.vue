@@ -4,6 +4,7 @@
     <icons></icons>
     <weekends></weekends>
     <guess></guess>
+    <where></where>
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import HomeHeader from './components/HomeHeader';
 import Icons from './components/Icons';
 import Weekends from './components/Weekends';
 import Guess from './components/Guess';
+import Where from './components/Where';
 export default {
   name: 'home',
   components: {
     HomeHeader,
     Icons,
     Weekends,
-    Guess
+    Guess,
+    Where
   }
 }
 </script>
