@@ -6,7 +6,7 @@
       <input @focus="handleFocus" type="text" placeholder="输入城市/景点/游玩主题">
     </div>
     <div class="right">
-      <span class="city">深圳</span>
+      <router-link class="city" tag="span" to="/city">深圳</router-link>
       <span class="iconfont">&#xe62a;</span>
     </div>
   </div>
