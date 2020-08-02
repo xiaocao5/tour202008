@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <span class="iconfont back">&#xe601;</span>
+    <router-link tag="span" :to="{ name: 'home' }" class="iconfont back">&#xe601;</router-link>
     <h1 class="title">城市选择</h1>
     <div class="in-out-wrapper">
       <div class="in active">境内</div>

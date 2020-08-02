@@ -6,19 +6,23 @@
       <input @focus="handleFocus" type="text" placeholder="输入城市/景点/游玩主题">
     </div>
     <div class="right">
-      <router-link class="city" tag="span" to="/city">深圳</router-link>
+      <router-link class="city" tag="span" to="/city">{{ $store.state.city }}</router-link>
       <span class="iconfont">&#xe62a;</span>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
   name: 'homeHeader',
   data () {
     return {
 
     }
+  },
+  computed: {
+    ...mapState(['city'])
   },
   methods: {
     handleFocus () {
