@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <span class="iconfont left">&#xe601;</span>
+    <router-link tag="span" to="/home" class="iconfont back-icon left">&#xe601;</router-link>
     <div class="middle">
       <span class="iconfont search-icon">&#xe600;</span>
-      <input type="text" placeholder="输入城市或景点">
+      <input type="text" :placeholder="placeholder">
     </div>
     <div class="right">
       <span class="city">搜索</span>
@@ -14,6 +14,9 @@
 <script>
 export default {
   name: 'homeHeader',
+  props: {
+    placeholder: String
+  },
   data () {
     return {
 
@@ -48,6 +51,7 @@ export default {
       width 100%;
       height .6rem;
       margin: .14rem;
+      text-align center;
       border-radius .4rem;
       background rgb(242, 242, 242);
       color #333;

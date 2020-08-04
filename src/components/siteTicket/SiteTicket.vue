@@ -1,18 +1,15 @@
 <template>
   <div>
-    <c-header placeholder="输入城市或景点"></c-header>
-    <tips></tips>
+    <c-header placeholder="景点门票"></c-header>
   </div>
 </template>
 
 <script>
 import CHeader from '../../common/CHeader';
-import Tips from './components/Tips';
 export default {
-  name: 'search',
+  name: 'siteTicket',
   components: {
-    CHeader,
-    Tips
+    CHeader
   }
 }
 </script>
