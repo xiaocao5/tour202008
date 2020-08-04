@@ -2,8 +2,11 @@
   <div ref="wrapper" class="detail-wrapper">
     <div class="content-detail clearfix">
       <banner></banner>
+      <ticket></ticket>
+      <one-day-tour></one-day-tour>
     </div>
     <city-header :styleObj="styleObj" :showBack="showBack"></city-header>
+    
   </div>
 </template>
 
@@ -11,11 +14,15 @@
 import BScroll from 'better-scroll';
 import CityHeader from './components/CityHeader';
 import Banner from './components/Banner';
+import Ticket from './components/Ticket';
+import OneDayTour from './components/OneDayTour';
 export default {
   name: 'detail',
   components: {
     CityHeader,
-    Banner
+    Banner,
+    Ticket,
+    OneDayTour
   },
   data () {
     return {
@@ -51,4 +58,6 @@ export default {
   top 0;
   bottom 0;
   overflow hidden;
+  .content-detail
+    height 30rem;
 </style>

@@ -1,7 +1,9 @@
 <template>
   <div class="wrapper">
     <div class="banner-wrapper">
-      <img src="//img1.qunarzz.com/sight/p0/1802/39/39ec37884650dd97a3.img.png_600x330_3dacf737.png" alt="">
+      <router-link to="/siteImgs">
+        <img src="//img1.qunarzz.com/sight/p0/1802/39/39ec37884650dd97a3.img.png_600x330_3dacf737.png" alt="">
+      </router-link>
       <div class="atlas"><span class="iconfont atlas-icon">&#xe600;</span>2</div>
       <div class="name">深圳平安金融中心</div>
     </div>
@@ -37,7 +39,6 @@ export default {
 
 <style lang="stylus" scoped>
 .wrapper
-  height 20rem;
   .banner-wrapper
     position relative
     img 
