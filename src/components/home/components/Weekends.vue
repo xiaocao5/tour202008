@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="weekends-wrapper">
     <h1 class="title"><span class="iconfont left">&#xe601;</span>本周热门榜单</h1>
     <div class="total">全部榜单<span class="iconfont left">&#xe601;</span></div>
     <div ref="scroll-wrapper" class="scroll-wrapper">
@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.wrapper
+.weekends-wrapper
   position relative
   padding: .2rem;
   .title

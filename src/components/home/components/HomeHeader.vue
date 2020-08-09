@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="home-header-wrapper">
     <span class="iconfont left">&#xe601;</span>
     <div class="middle">
       <span class="iconfont search-icon">&#xe600;</span>
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.wrapper
+.home-header-wrapper
   display flex;
   height .88rem;
   background rgb(0, 188, 212);

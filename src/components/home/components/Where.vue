@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="where-wrapper">
     <h1 class="title">周末去哪儿</h1>
     <ul class="site-wrapper">
       <li v-for="item of siteList" :key="item.id" class="item">
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.wrapper
+.where-wrapper
   .title
     line-height 1rem;
     background rgb(245, 245, 245);
