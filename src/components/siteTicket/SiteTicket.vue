@@ -2,7 +2,7 @@
   <div ref="site-ticket-wrapper" class="site-ticket-wrapper">
     <div class="content">
       <c-header placeholder="景点门票"></c-header>
-      <category-sort :fixedTopStyle="fixedTopStyle"></category-sort>
+      <category-sort></category-sort>
       <ticket-info></ticket-info>
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
       click: true,
       taps: true,
       probeType: 2
-    }
+    };
     this.scroll = new BScroll(this.$refs['site-ticket-wrapper'], options);
   }
 }

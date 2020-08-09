@@ -251,10 +251,17 @@ export default {
       scrollbar: {
         fade: true,
         interactive: false // 1.8.0 新增
-      }
+      },
+      stopPropagation: true,//用法在于这一行
+      probeType: 2
     }
     this.scroll_1 = new BScroll(this.$refs['category-wrapper'], options);
     this.scroll_2 = new BScroll(this.$refs['detail-wrapper'], options);
+    this.scroll_1.on('scroll', function (e) {//之后被冒泡页，通过事件监听去出发控制
+      if (Math.abs(e.x) <= 0) {
+        this.scrollTo(0, e.y, 700)
+      } 
+    })    
   }
 }
 </script>
